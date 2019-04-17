@@ -1,0 +1,217 @@
+body{
+   min-height: 500px;
+}
+#login-page{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#DEF3F4;
+    z-index: 99;
+}
+#login-page .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-login-box{
+    width:67.4%;
+    height:75%;
+    min-width: 800px;
+    min-height: 470px;
+    background:rgba(249,250,252,1);
+    box-shadow:-3px 0px 20px 0px rgba(5,38,86,0.2);
+    border-radius:7px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+    margin: auto;
+    overflow: hidden;
+}
+.g-back-box{
+    display: inline-block;
+    width: 67%;
+    height: 100%;
+    background: url('../../assets/img/login/img-back.png');
+    background-size: 100% 100%; 
+    position: absolute;
+    left: 0;   
+    overflow: hidden;
+}
+.g-back-box .img-sloga{
+    height: 9.26%;    
+    width: 76.88%;      
+    position: absolute;
+    left: 6.08%;
+    bottom: 32.22%;
+    animation: moveTo 3s;
+    -webkit-animation: moveTo 3s;    
+}
+/** sloga 向上移动动效**/
+@keyframes moveTo{
+    from{
+        bottom: -100px;
+    }
+    to{
+        bottom: 32.22%;
+    }
+}
+@-webkit-keyframes moveTo{
+    from{
+        bottom: -100px;
+    }
+    to{
+        bottom: 32.22%;
+    }
+}
+@-moz-keyframes moveTo{
+    from{
+        bottom: -100px;
+    }
+    to{
+        bottom: 32.22%;
+    }
+}
+@-o-keyframes moveTo{
+    from{
+        bottom: -100px;
+    }
+    to{
+        bottom: 32.22%;
+    }
+}
+
+.g-login-form-box{
+    width:30.6%;
+    height:75.3%;
+    background:rgba(255,255,255,1);
+    box-shadow:-3px 0px 20px 0px rgba(18,73,155,0.2);
+    border-radius: 7px;
+    z-index: 100000000;
+    position: absolute;   
+    right: 9.58%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 4px solid rgba(8,111,240,1);
+    animation: moveLeft 2s;
+    -webkit-animation: moveLeft 2s;
+}
+/** 登录盒子左移特效**/
+@keyframes moveLeft{
+    from{
+        right: -200px;
+    }
+    to{
+        right:9.58%;
+    }
+}
+@-webkit-keyframes moveLeft{
+    from{
+        right: -200px;
+    }
+    to{
+        right:9.58%;
+    }
+}
+@-moz-keyframes moveLeft{
+    from{
+        right: -200px;
+    }
+    to{
+        right:9.58%;
+    }
+}
+@-o-keyframes moveLeft{
+    from{
+        right: -200px;
+    }
+    to{
+        right:9.58%;
+    }
+}
+
+.img-logo{
+    margin-top: 9.4%;
+    margin-left: 11.11%;
+    width: 70.4%;
+}
+.img-welcome{
+    margin-top: 10.68%;
+    margin-left: 11.11%;
+    width: 48.74%;
+}
+.g-login-form{
+    margin-top: 4.85%;
+}
+#login-page .txt-input{
+    width:77.77%;
+    height:7.44%;
+    background:rgba(255,255,255,1); 
+    border:2px solid rgba(241, 244, 247, 1);  
+    border-radius:2px;
+    margin-left: 11.11%;    
+    font-size:4.04%;
+    font-family:"MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+#login-page .txt-input:focus{
+    box-shadow:0px 0px 10px 0px rgba(8,111,240,0.5);
+    border: none;
+}
+
+#login-page .btn-login{
+    width:78.79%;
+    height:8.1%;    
+    background:rgba(26,107,226,0.5);
+    border-radius:2px;
+    font-size:4.04%;
+    font-family:"MicrosoftYaHei";
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+#login-page .btn-login:hover{
+    background:rgba(26,107,226,1);
+}
+@media(min-height:650px){
+    #login-page .btn-login{
+        height: 50px;
+        font-size: 18px;
+    }
+    #login-page .txt-input{
+        height: 45px;
+        font-size: 16px;
+    }
+}
+.g-remember{
+    margin: 15px auto auto 11.11%;
+}
+.lbl-name{
+    font-size:4.55%;
+    font-family:"SourceHanSansCN-Regular";
+    font-weight:400;
+    color:rgba(153,153,153,1);
+}
+/** 表单错误提示信息显示样式**/
+.ant-form-explain{
+    margin-left: 11.11% !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+.ant-form-item{
+    margin-bottom: 3.88% !important;
+}
